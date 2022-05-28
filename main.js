@@ -9,6 +9,7 @@ while ( numberOfGoodbyes < 2 ) {
 
     if ( userInput == "" ) {
         userInput = window.prompt("WHAT?!")
+        numberOfGoodbyes = 0;
     }else if (userInput == "GOODBYE!" && numberOfGoodbyes == 0){
         userInput = window.prompt("LEAVING SO SOON?")
         numberOfGoodbyes = 1;
@@ -18,9 +19,11 @@ while ( numberOfGoodbyes < 2 ) {
     }
     else if ( userInput.toUpperCase() != userInput ) {
         userInput = window.prompt("SPEAK UP, KID!")
+        numberOfGoodbyes = 0;
     }
     else if ( userInput.toUpperCase() == userInput ) {
         userInput = window.prompt('NO, NOT SINCE 1946!')
+        numberOfGoodbyes = 0;
     }
 }
 }
